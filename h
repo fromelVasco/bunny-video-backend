@@ -1,0 +1,18 @@
+# --- Bunny Stream (Stream > a tua Library) ---
+# Library ID: visível no topo da library / no URL do dashboard
+BUNNY_LIBRARY_ID=
+# API Key da library: Library > API  (NUNCA no Kobweb, só aqui no servidor)
+BUNNY_API_KEY=
+# Chave do "Embed view token authentication": Library > Security
+BUNNY_EMBED_TOKEN_KEY=
+# Hostname CDN da library (ex.: vz-xxxxxxxx-xxx.b-cdn.net) - só para thumbnails
+BUNNY_CDN_HOSTNAME=
+
+# Validade mínima do token em segundos (14400 = 4h)
+EMBED_TOKEN_TTL_SECONDS=14400
+
+# Origens do teu app Kobweb autorizadas (CORS), separadas por vírgula
+ALLOWED_ORIGINS=http://localhost:8080,https://o-teu-dominio.com
+
+# OPCIONAL: se definido, exige Firebase ID token (Authorization: Bearer ...)
+FIREBASE_PROJECT_ID=
