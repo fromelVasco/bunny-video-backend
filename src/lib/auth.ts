@@ -23,7 +23,8 @@ export async function authorize(req: Request): Promise<void> {
       issuer: `https://securetoken.google.com/${projectId}`,
       audience: projectId,
     });
-  } catch {
-    throw new HttpError(401, "Token inválido");
-  }
+  } catch (e: any) {
+  console.error("jwtVerify falhou:", e?.code, e?.claim, e?.message);
+  throw new HttpError(401, "Token inválido");
+}
 }
